@@ -15,7 +15,9 @@ const assignment = {};
  */
 
 function sumOfNumbers(arrayOfNumbers) {
-  return arrayOfNumbers.reduce(((prev,cum)=> prev+cum),0)
+  return arrayOfNumbers.reduce(function(prev,cum){
+    return prev+cum
+  },0 )
 }
 
 assignment.sumOfNumbers = sumOfNumbers;
